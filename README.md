@@ -1,7 +1,7 @@
 # Welcome to Vaska's space
 This repository contains a list of 1947 Iridium complexes, including their geometry (xyz files) and energy barriers for the hydrogen splitting reaction.
 
-For more information, please read our [ChemRxiv](https://chemrxiv.org/).
+For more information, please read our paper on [ChemRxiv](https://chemrxiv.org/).
 
 The data loader (vaskas_data_loader.py) provides some basic functionality to load the complexes.
 
@@ -22,7 +22,7 @@ We constructed 2574 unique iridium complexes in a combinatorial way using the fo
 ![Image of the chemical space of the Vaska's complexes](images/chemical_space.png)
 
 
-## More information
+## Links
 
 More information can be found here:
 
