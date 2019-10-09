@@ -3,7 +3,7 @@ This repository contains a list of 1947 Iridium complexes, including their geome
 
 For more information, please read our paper on [ChemRxiv](https://chemrxiv.org/).
 
-The data loader (vaskas_data_loader.py) provides some basic functionality to load the complexes.
+The data loader (*vaskas_data_loader.py*) provides some basic functionality to load the complexes.
 
 ## Data
 * **Coordinates in .xyz format**
