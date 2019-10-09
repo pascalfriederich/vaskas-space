@@ -7,6 +7,8 @@ The data loader (vaskas_data_loader.py) provides some basic functionality to loa
 
 ## Data
 * Coordinates in xyz files
+    * data/coordinates_complex: the .xyz files of all complexes without additional hydrogen
+    * data/coordinates_TS: the .xyz files of all complexes with an additional hydrogen molecule in transition state
 * csv file with
     * "smiles": [SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system) strings of all molecules
     * "filename": corresponding xyz filename
