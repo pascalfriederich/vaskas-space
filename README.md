@@ -6,10 +6,10 @@ For more information, please read our paper on [ChemRxiv](https://chemrxiv.org/)
 The data loader (vaskas_data_loader.py) provides some basic functionality to load the complexes.
 
 ## Data
-* Coordinates in xyz files
-    * data/coordinates_complex: the .xyz files of all complexes without additional hydrogen
-    * data/coordinates_TS: the .xyz files of all complexes with an additional hydrogen molecule in transition state
-* csv (data/vaskas_features_properties_smiles_filenames.csv) file with
+* **Coordinates in .xyz format**
+    * data/coordinates_complex: coordinates of all complexes without additional hydrogen
+    * data/coordinates_TS: coordinates of all complexes with an additional hydrogen molecule in transition state
+* **Properties in .csv format** (data/vaskas_features_properties_smiles_filenames.csv)
     * "smiles": [SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system) strings of all molecules
     * "filename": corresponding xyz filename
     * "barrier": DFT computed energy barrier [kcal/mol] for the transition state of the hydrogen splitting reaction
