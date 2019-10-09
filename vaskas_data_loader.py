@@ -16,12 +16,17 @@ def readxyz(filename):
 def load_data():
     data = pd.read_csv("data/vaskas_features_properties_smiles_filenames.csv")
 
-    molecules=[]
+    molecules_complex=[]
     for filename in data["filename"]:
-        coords, elements = readxyz("data/coordinates/{}.xyz".format(filename))
-        molecules.append([coords, elements])
+        coords, elements = readxyz("data/coordinates_complex/{}_min.xyz".format(filename))
+        molecules_complex.append([coords, elements])
 
-    return(data, molecules)
+    molecules_TS=[]
+    for filename in data["filename"]:
+        coords, elements = readxyz("data/coordinates_TS/{}_ts.xyz".format(filename))
+        molecules_TS.append([coords, elements])
+
+    return(data, molecules_complex, molecules_TS)
 
 
 def quick_data_analysis(molecules):
@@ -44,10 +49,12 @@ def quick_data_analysis(molecules):
 
 
 if __name__ == "__main__":
-    data, molecules = load_data()
-    num_molecules = len(molecules)
-    quick_data_analysis(molecules)
-    print("Found {} molecules".format(num_molecules))
+    data, molecules_complex, molecules_TS = load_data()
+    num_molecules_complex = len(molecules_complex)
+    num_molecules_TS = len(molecules_TS)
+    quick_data_analysis(molecules_complex)
+    print("Found {} molecules in optimized complex geometry".format(num_molecules_complex))
+    print("Found {} molecules in optimized transition state geometry".format(num_molecules_TS))
     print(data.head())
 
 
