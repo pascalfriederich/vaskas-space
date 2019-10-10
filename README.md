@@ -15,7 +15,7 @@ The data loader (*vaskas_data_loader.py*) provides some basic functionality to l
     * "filename": corresponding xyz filename
     * "barrier": DFT computed energy barrier [kcal/mol] for the transition state of the hydrogen splitting reaction
     * "distance": DFT computed H-H distance in the transition state geometry
-    * "chi-X", "Z-X", "T-X", "I-X" and "S-X": (auto)correlation features described in [out paper](https://chemrxiv.org/)
+    * "chi-X", "Z-X", "T-X", "I-X" and "S-X": (auto)correlation features described in [our paper](https://chemrxiv.org/)
 
 
 ## Chemical space
