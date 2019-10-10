@@ -9,6 +9,7 @@ The data loader (*vaskas_data_loader.py*) provides some basic functionality to l
 * **Coordinates in .xyz format**
     * data/coordinates_complex: coordinates of all complexes without additional hydrogen
     * data/coordinates_TS: coordinates of all complexes with an additional hydrogen molecule in transition state
+    * data/coordinates_molSimplify: coordinates of all complexes generated with [molSimplify](https://github.com/hjkgrp/molSimplify) developed by the [Kulik group](https://hjkgrp.mit.edu/content/molsimplify-introduction)
 * **Properties in .csv format** (data/vaskas_features_properties_smiles_filenames.csv)
     * "smiles": [SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system) strings of all molecules
     * "filename": corresponding xyz filename
